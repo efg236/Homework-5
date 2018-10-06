@@ -59,6 +59,7 @@ nav a{
 
 .homepage-cinnamon-details {
     position: relative;
+    background-color:#F6F1F1;
 }
 
 .homepage-cinnamon-details .details-wrapper {
@@ -71,4 +72,26 @@ nav a{
 
 .homepage-cinnamon img{
     width:100%;
+}
+
+.email-signup{
+    background-color:#667080;
+    padding:15px 100px 15px 100px;
+    color:#FFFFFF;
+}
+
+.signup-text {
+    width:50%;
+}
+
+.signup-form{
+    width:30%;
+}
+
+.signup-button{
+    width:20%;
+}
+
+footer {
+
 }
