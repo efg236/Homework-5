@@ -1,3 +1,45 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
 header {
-    text-align: center;
+    width:100%;
+}
+
+header img {
+    display:block;
+    max-width: 50%;
+    margin:2px auto 4px auto;
+}
+
+nav{
+    text-align:center;
+    margin: 0px;
+    padding:20px 0;
+    background-color:#C8DDE1;
+    width: 100%;
+}
+
+.nav-links {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+nav a{
+    text-align:center;
+    font-size: 16px;
+    color:black;
+    display:inline-block;
+    margin:0 0 0 100px;
+    text-decoration:none;
+}
+
+.homepage-cinnamon{
+    width:50%;
+}
+
+.homepage-cinnamon img{
+    width:100%;
 }
