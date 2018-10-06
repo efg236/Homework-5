@@ -1,7 +1,23 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 html,
 body {
     padding: 0;
     margin: 0;
+}
+
+.row {
+    display: flex;
+}
+
+.top-bar {
+    background:#F6F1F1;
+    height:30px;
 }
 
 header {
@@ -36,8 +52,21 @@ nav a{
     text-decoration:none;
 }
 
-.homepage-cinnamon{
+.homepage-cinnamon,
+.homepage-cinnamon-details{
     width:50%;
+}
+
+.homepage-cinnamon-details {
+    position: relative;
+}
+
+.homepage-cinnamon-details .details-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:60%;
 }
 
 .homepage-cinnamon img{
