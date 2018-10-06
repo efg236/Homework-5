@@ -92,6 +92,30 @@ nav a{
     width:20%;
 }
 
-footer {
+.signup-form input {
+    width:200px;
+    height:40px;
+}
 
+
+.footer {
+    padding:30px 100px 30px 100px;
+    background-color:#FFFFFF;
+    color:#667080;
+}
+
+.company-footer{
+    width:25%;
+}
+
+.about-footer{
+    width:25%;
+}
+
+.help-footer{
+    width:25%;
+}
+
+.connect-footer{
+    width:25%
 }
