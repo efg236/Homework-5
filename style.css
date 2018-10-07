@@ -10,6 +10,7 @@ html,
 body {
     padding: 0;
     margin: 0;
+    font-family: 'Ubuntu',sans-serif;
 }
 
 .row {
@@ -52,6 +53,7 @@ nav a{
     margin:0 0 0 100px;
     text-decoration:none;
 }
+
 
 .homepage-cinnamon,
 .homepage-cinnamon-details{
@@ -111,6 +113,7 @@ nav a{
 
 .about-footer{
     width:25%;
+    margin-left:100px;
 }
 
 .help-footer{
@@ -147,13 +150,17 @@ ul {
     padding: 0;
 }
 
+.sidenav ul li a {
+    text-decoration:none;
+}
+
 .sidenav ul li {
     padding-left: 15px;
 }
 
 
 .sidenav a:hover {
-    color: #064579;
+    color: palevioletred;
 }
 
 
@@ -180,6 +187,14 @@ ul {
     display:flex;
     margin-top: 60px;
     width:100%;
+}
+
+.items-list a {
+    text-decoration:none;
+}
+
+.items-list a:hover {
+    color: palevioletred;
 }
 
 .items-list .item {
@@ -250,4 +265,8 @@ ul {
     margin-top:20px;
     background:#667080;
     height:60px;
+}
+
+h3 {
+    font-size:18px;
 }
