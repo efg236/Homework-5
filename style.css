@@ -32,6 +32,19 @@ header img {
     margin:2px auto 4px auto;
 }
 
+.button {
+    cursor: pointer;
+    background-color:#667080;
+    border: 2px solid #FFFFFF;
+    color:white;
+    padding: 15px 32px;
+    text-align:center;
+    text-decoration:none;
+    font-size:14px;
+    margin:4px 2px;
+    cursor:pointer;
+}
+
 nav{
     text-align:center;
     margin: 0px;
@@ -270,3 +283,4 @@ ul {
 h3 {
     font-size:18px;
 }
+
