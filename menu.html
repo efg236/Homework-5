@@ -7,53 +7,62 @@
     <link  rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+    <div class="top-bar"></div>
     <header>
-    <center><img src="./assets/header-logo.png"></center>
+        <img src ="./assets/header-logo.png">
+        <nav>    
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="menu.html">Items</a>
+                <a>About</a>
+                <a>Search</a>
+                <a>Shopping Cart</a>
+            </div>
+        </nav>
     </header>
-    <nav>    
-        <a>Home</a>
-        <a>Items</a>
-        <a>About</a>
-        <a>Search</a>
-        <a>Shopping Cart</a>
-    </nav>
-    <div class="sidebar">
-        <ul>Featured</ul>
-        <ul>Flavors
-            <li>Original</li>
-            <li>BlackBerry</li>
-            <li>Walnut</li>
-            <li>Pumpkin Spice</li>
-            <li>Caramel Pecan</li>
-        </ul>
-        <ul>Gifts</ul>
-    </div>
-    <div>
-        <div class="display">
-            <div>
+    <div id="menu-main">
+        <div class="sidenav">
+            <ul>
+                <li class="list-header">Featured</li>
+            </ul>
+            <ul>
+                <li class="list-header">Flavors</li>
+                <li>Original</li>
+                <li>BlackBerry</li>
+                <li>Walnut</li>
+                <li>Pumpkin Spice</li>
+                <li>Caramel Pecan</li>
+            </ul>
+            <ul>
+                <li class="list-header">Gifts</li>
+            </ul>
+        </div>
+        <div id="myProductlist">
+            <div class="display">
                 <img src="./assets/menupage-cinnamon.jpg">
             </div>
-        </div>
-        <div class="items-list">
-            <div>
-                <img src="./assets/menu-cinnamon-item.JPG">
-                <p>Original</p>
-                <p>$2.00</p>
-                <button type="button">Shop Now</button>
-            </div>
-            <div>
-                <img src="./assets/menu-cinnamon-item.JPG">
-                <p>BlackBerry</p>
-                <p>$2.00</p>
-                <button type="button">Shop Now</button>
-            </div>
-             <div>
-                <img src="./assets/menu-cinnamon-item.JPG">
-                <p>Pumpkin Spice</p>
-                <p>$2.00</p>
-                <button type="button">Shop Now</button>
+            <div class="items-list">
+                <div class="item original-cinnamon">
+                    <img src="./assets/menu-cinnamon-item.JPG" class="menu-item-selling">
+                    <p>Original</p>
+                    <p>$2.00</p>
+                    <button type="button">Shop Now</button>
+                </div>
+                <div class="item blackberry-cinnamon">
+                    <img src="./assets/menu-cinnamon-item.JPG" class="menu-item-selling">
+                    <p>BlackBerry</p>
+                    <p>$2.00</p>
+                    <button type="button">Shop Now</button>
+                </div>
+                 <div class="item pumpkin-spice-cinnamon">
+                    <img src="./assets/menu-cinnamon-item.JPG" class="menu-item-selling">
+                    <p>Pumpkin Spice</p>
+                    <p>$2.00</p>
+                    <button type="button">Shop Now</button>
+                </div>
             </div>
         </div>
     </div>
+
 </body>
 </html>

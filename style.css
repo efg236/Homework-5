@@ -119,3 +119,85 @@ nav a{
 .connect-footer{
     width:25%
 }
+
+ul {
+    list-style-type:none;
+    margin:none;
+    padding:none;
+}
+
+.footer ul {
+    list-style-position: inside;
+    padding-left:0;
+}
+
+.copyright-company-name {
+    font-size: 12px;
+}
+
+.sidenav {
+    padding: 8px 0;
+    margin-right: 60px;
+    width: 25%;
+}
+
+.sidenav ul li.list-header {
+    font-weight: bold;
+    padding: 0;
+}
+
+.sidenav ul li {
+    padding-left: 10px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #2196F3;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #064579;
+}
+
+
+#menu-main {
+    display: flex;
+    padding: 0 100px;
+    max-width: 1280px;
+}
+
+.display {
+    width:100%;
+}
+
+.display img {
+    width: 100%;
+}
+
+#myProductList {
+    width: 75%;
+}
+
+
+.items-list {
+    display:flex;
+    margin-top: 60px;
+    width:100%;
+}
+
+.items-list .item {
+    margin-right: 45px;
+    width: 33.33%;
+    text-align: center;
+}
+
+.items-list .item:last-child {
+    margin-right: 0;
+}
+
+.items-list .item img {
+    width: 100%;
+}
