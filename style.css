@@ -284,3 +284,10 @@ h3 {
     font-size:18px;
 }
 
+h2 {
+    text-align:center;
+}
+
+hr.style1 {
+    border-top:1px solid #8c8b8b;
+}
