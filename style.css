@@ -295,14 +295,14 @@ h3 {
 .title {
     font-size:18px;
     text-align:center;
-    margin:40px 0;
+    margin:40px 0 0 0;
 }
 
 .item{
     width:700px;
     margin-left:auto;
     margin-right:auto;
-    margin-top:auto;
+    margin-top:10px;
     display:flex;
 }
 
@@ -345,7 +345,6 @@ h3 {
 }
 
 .shoppingcart-text .shoppingcart-quantity input {
-    border:none;
     text-align: center;
     width:32px;
     font-size:16px;
@@ -359,5 +358,18 @@ h3 {
     font-size:16px;
     color:#43484D;
     font-weight:300;
+    display:inline-block;
+}
+
+.shoppingcart-text .options span {
+    font-size: 14px;
+    color:#43484D;
+    width:33.33%;
+    display:inline-block;
+}
+
+.shoppingcart-text .options last-child {
+    font-size: 14px;
+    color:#43484D;
     display:inline-block;
 }
