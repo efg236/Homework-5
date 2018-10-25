@@ -1,0 +1,10 @@
+What challenges or bugs did you encounter and how did you overcome the challenges?
+In designing my website, I had the hardest time understanding how <div>s worked with the CSS selectors. In particular, it was hard to understand how to set up
+the document in respect to a grid layout using div. This was my first time really using CSS to style a website and I found myself understanding how to scale images 
+through percentages rather than pixels and how that impacts where they are placed on the screen. I worked through a couple of trial and errors as well as used online resources
+like WS3, CSS tricks, and my classmates to help me through building the website.
+
+How is the brand identity of your client reflected through your design choices? What kind of look and feel did you design for them and why?
+I wanted to start off with a toned, homey color palette that gave off the cosy feeling of where delicious baked goods could be. The overall sans-serif font worked to help emphasize that
+as well as the product menu page with bold, obvious pictures that imitated the same ease of someone browsing at baked cinnamon rolls on the other side of the glass and counter. As cinnamon rolls
+is a food-related venture, I wanted to make sure that the website was easy to navigate for anyone who wants to see what Bum Bum Bake Shop is about. 
