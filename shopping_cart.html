@@ -38,13 +38,13 @@
                     <span>Original Roll</span>
                 </div>
                 <div class="shoppingcart-quantity">
-                    <input type="number" value="1">
+                    <input type="number" value="1" min="1">
                 </div>
                 <div class="shoppingcart-total-price">
                     $2.00
                 </div>
             <hr>
-                <div class="options">
+                <div id="options">
                     <span class="glaze">Glaze: None</span>
                     <span class="update">Update</span>
                     <span class="remove">Remove Item</span>
@@ -61,13 +61,13 @@
                     <span>Original Roll</span>
                 </div>
                 <div class="shoppingcart-quantity">
-                    <input type="number" value="1">
+                    <input type="number" value="1" min="1">
                 </div>
                 <div class="shoppingcart-total-price">
                     $2.00
                 </div>
             <hr>
-                <div class="options">
+                <div id="options">
                     <span class="glaze">Glaze: None</span>
                     <span class="update">Update</span>
                     <span class="remove">Remove Item</span>
@@ -76,54 +76,63 @@
         </div>
         <div class="totals">
             <div class="totals-item">
-            <label>Subtotal</label>
-        <div class="totals-value" id="cart-subtotal">71.97</div>
+                <label>Subtotal</label>
+                <div class="totals-value" id="cart-subtotal">71.97</div>
+            </div>
+            <div class="totals-item">
+                <label>Tax (5%)</label>
+                <div class="totals-value" id="cart-tax">3.60</div>
+            </div>
+            <div class="totals-item">
+                <label>Shipping</label>
+                <div class="totals-value" id="cart-shipping">15.00</div>
+            </div>
+            <div class="totals-item totals-item-total">
+                <label>Grand Total</label>
+                <div class="totals-value" id="cart-total">90.57</div>
+            </div>
+            <button class="continue-shopping"><span class="left"></span>Continue Shopping</button>
+            <button class="checkout">Checkout
+            <span class="right"></span></button>
         </div>
-        <div class="totals-item">
-            <label>Tax (5%)</label>
-        <div class="totals-value" id="cart-tax">3.60</div>
-        </div>
-        <div class="totals-item">
-            <label>Shipping</label>
-        <div class="totals-value" id="cart-shipping">15.00</div>
-        </div>
-        <div class="totals-item totals-item-total">
-            <label>Grand Total</label>
-        <div class="totals-value" id="cart-total">90.57</div>
-        </div>
-            <button class="checkout">Checkout</button>
-        </div>
-      
 </div>    
-
     
+   <div class="footer-bar"></div>
+     <div class="row footer">
+        <div class="company-footer">
+            <h4>Bum Bum Bake Shop</h4>
+            <p class="copyright-company-name"> &copy; Bum Bum Bake Shop, Inc.</p>
+        </div>
 
+        <div class="about-footer">
+            <h4>About</h4>
+            <ul>
+                <li>Team</li>
+                <li>Jobs</li>
+                <li>Blog</li>
+                <li>Press</li>
+            </ul>
+        </div>
 
-        
-        
-    <!---
-        <table id="cart">
-            <thead>
-            <tr>
-            <hr class="style1"> 
-            </tr>
-            </thead> 
-            <tbody>
-                <tr class="productitm">
-                    <td><img src="./assets/menu-cinnamon-item.JPG" class="thumb"></td>
-                    <td>Original Roll</td>
-                    <td>Glaze:None</td>
-                    <td><input type="number" value="1" min="0" max="99" class="qtyinput"></td>
-                    <td>Update</td>
-                    <td>In Stock</td>
-                    <td>$2.00</td>
-                    <td>Remove Item</td>
-                </tr>
-            </tbody>
-        </table>
-        -->
-        
-   
-    
+        <div class="help-footer">
+            <h4>Help</h4>
+            <ul>
+                <li>Contact Us</li>
+                <li>Security</li>
+                <li>Terms of Service</li>
+                <li>Privacy Policy</li>
+            </ul>
+        </div>
+
+        <div class="connect-footer">
+            <h4>Connect</h4>
+            <ul>
+                <li>Facebook</li>
+                <li>YouTube</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>
