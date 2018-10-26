@@ -42,7 +42,6 @@ header img {
     text-decoration:none;
     font-size:14px;
     margin:4px 2px;
-    cursor:pointer;
 }
 
 nav{
@@ -286,7 +285,7 @@ h3 {
 
 .shopping-cart {
     width:750px;
-    height:423px;
+    height:1000px;
     margin:30px auto;
     display:flex;
     flex-direction:column;
@@ -302,7 +301,7 @@ h3 {
     width:700px;
     margin-left:auto;
     margin-right:auto;
-    margin-top:10px;
+    margin-top:20px;
     display:flex;
 }
 
@@ -372,4 +371,58 @@ h3 {
     font-size: 14px;
     color:#43484D;
     display:inline-block;
+}
+
+.totals {
+    text-align:right;
+    width:750px;
+    height:150px;
+    margin:30px auto;
+    display:inline-block;
+}
+
+.totals .totals-item {
+    clear:both;
+    width:100%;
+    margin-bottom:10px;
+    display:flex;
+    justify-content:space-evenly;
+    
+}
+
+.totals .totals-items::before {
+    content:"";
+    display:table;
+}
+
+label {
+    text-align:right;
+    clear:both;
+    width:79%;
+}
+
+.totals .totals-items .totals-value {
+    text-align:right;
+    width:21%;
+    display:inline-block;
+    font-size:16px;
+    color:#43484D;
+    font-weight:300;
+}
+
+.totals .totals-items .totals-item-total {
+    font-weight:bold;
+}
+
+.checkout {
+    float:right;
+    cursor: pointer;
+    background-color:#667080;
+    border: 2px solid #FFFFFF;
+    color:white;
+    padding: 15px 32px;
+    text-align:center;
+    text-decoration:none;
+    font-size:14px;
+    margin:10px 30px 0 0;
 }
