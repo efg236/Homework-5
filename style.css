@@ -54,7 +54,7 @@ nav{
 
 .nav-links {
     max-width: 80%;
-    margin: 0 auto;
+    margin: 0 40px;
 }
 
 nav a{
@@ -285,19 +285,35 @@ h3 {
 
 .shopping-cart {
     width:750px;
-    height:700px;
+    height:600px;
     margin:30px auto;
     display:flex;
     flex-direction:column;
 }
 
 .title {
-    font-size:18px;
-    text-align:center;
-    margin:40px 0 0 0;
+    font-size: 18px;
+    text-align: center;
+    margin: 10px 0 0 0;
+    padding: 0 25px;
+}
+
+
+#item-count {
+    font-size: 18px;
+    text-align: left;
+    margin: 20px 0 0 0;
+    padding: 0 25px;
 }
 
 .item{
+    width:700px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:20px;
+}
+
+.shoppingcart-item {
     width:700px;
     margin-left:auto;
     margin-right:auto;
@@ -365,6 +381,11 @@ span {
     color:#43484D;
 }
 
+.shoppingcart-text .shoppingcart-description .product-title {
+    font-size:16px;
+    font-weight:bold;
+}
+
 #options {
     display:flex;
     justify-content: space-between;
@@ -374,22 +395,22 @@ span {
 
 
 .totals {
-    text-align:right;
-    width:750px;
-    height:150px;
-    margin:30px auto;
-    display:inline-block;
+    text-align: right;
+    width: 750px;
+    height: 150px;
+    margin: 20px -20px;
+    display: inline-block;
 }
 
 .totals .totals-item {
-    font-size:16px;
+    font-size:12px;
     color:#43484D;
     font-weight:300;
     clear:both;
-    width:100%;
+    width:95%;
     margin-bottom:10px;
     display:flex;
-    justify-content:space-evenly;
+    justify-content:space-between;
     
 }
 
@@ -404,6 +425,11 @@ label {
     width:79%;
 }
 
+.total-cost {
+    font-weight:bold;
+    font-size:16px;
+    }
+
 .totals .totals-items .totals-value {
     text-align:right;
     width:21%;
@@ -413,9 +439,6 @@ label {
     font-weight:300;
 }
 
-.totals .totals-items .totals-item-total {
-    font-weight:bold;
-}
 
 .checkout {
     float: right;
@@ -440,7 +463,7 @@ label {
     text-align:center;
     text-decoration:none;
     font-size:14px;
-    margin:10px 30px 0 0;
+    margin:10px 0 0 40px;
 }
 
 .right {

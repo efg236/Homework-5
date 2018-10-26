@@ -17,7 +17,7 @@
                 <a href="menu.html">Items</a>
                 <a>About</a>
                 <a>&#128269;</a>
-                <a>&#x1F6D2;</a>
+                <a href="shopping_cart.html">&#x1F6D2;</a>
             </div>
         </nav>
     </header>
@@ -25,17 +25,19 @@
         <!--Title-->
         <div class="title">
             Cart
-            <hr>
         </div>
-        <div></div>
-        <div class="item">
+        <div id="item-count">
+        <span>&#x1F6D2; 3 items in Your Cart</span>
+        <hr>
+        </div>
+        <div class="shoppingcart-item">
             <!---Product#1-->
             <div class="shoppingcart-image">
                 <img src="./assets/menu-cinnamon-item.JPG" alt="" />
             </div>
             <div class="shoppingcart-text">
                 <div class="shoppingcart-description">
-                    <span>Original Roll</span>
+                    <span class="product-title">Original Roll</span>
                 </div>
                 <div class="shoppingcart-quantity">
                     <input type="number" value="1" min="1">
@@ -51,14 +53,14 @@
                 </div>
             </div>
         </div>
-            <div class="item">
-            <!---Product#1-->
+        <div class="shoppingcart-item">
+            <!---Product#2-->
             <div class="shoppingcart-image">
                 <img src="./assets/menu-cinnamon-item.JPG" alt="" />
             </div>
             <div class="shoppingcart-text">
                 <div class="shoppingcart-description">
-                    <span>Original Roll</span>
+                    <span class="product-title">Original Roll</span>
                 </div>
                 <div class="shoppingcart-quantity">
                     <input type="number" value="1" min="1">
@@ -77,19 +79,19 @@
         <div class="totals">
             <div class="totals-item">
                 <label>Subtotal</label>
-                <div class="totals-value" id="cart-subtotal">71.97</div>
+                <div class="totals-value" id="cart-subtotal">$4.00</div>
             </div>
             <div class="totals-item">
-                <label>Tax (5%)</label>
-                <div class="totals-value" id="cart-tax">3.60</div>
+                <label>Free Shipping</label>
+                <div class="totals-value" id="cart-tax">$0.00</div>
             </div>
             <div class="totals-item">
-                <label>Shipping</label>
-                <div class="totals-value" id="cart-shipping">15.00</div>
+                <label>Estimated Tax</label>
+                <div class="totals-value" id="cart-shipping">Calculate</div>
             </div>
             <div class="totals-item totals-item-total">
-                <label>Grand Total</label>
-                <div class="totals-value" id="cart-total">90.57</div>
+                <label class="total-cost">Total</label>
+                <div class="total-cost" class="totals-value" id="cart-total">$4.00</div>
             </div>
             <button class="continue-shopping"><span class="left"></span>Continue Shopping</button>
             <button class="checkout">Checkout
