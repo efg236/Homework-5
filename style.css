@@ -54,7 +54,7 @@ nav{
 
 .nav-links {
     max-width: 80%;
-    margin: 0 40px;
+    margin: 0 105px;
 }
 
 nav a{
@@ -168,6 +168,7 @@ ul {
 
 .sidenav ul li {
     padding-left: 15px;
+    margin:5px;
 }
 
 
@@ -283,6 +284,8 @@ h3 {
     font-size:18px;
 }
 
+/*shopping cart*/
+
 .shopping-cart {
     width:750px;
     height:600px;
@@ -393,6 +396,9 @@ span {
     color:#43484D;
 }
 
+.update {
+    text-align:center;
+}
 
 .totals {
     text-align: right;

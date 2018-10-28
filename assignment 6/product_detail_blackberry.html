@@ -21,45 +21,39 @@
             </div>
         </nav>
     </header>
-    <div id="menu-main">
-        <div class="sidenav">
-            <ul>
-                <li class="list-header">Featured</li>
-            </ul>
-            <ul>
-                <li class="list-header">Flavors</li>
-                <li><a href="product_detail.html">Original</a></li>
-                <li>BlackBerry</li>
-                <li>Walnut</li>
-                <li>Pumpkin Spice</li>
-                <li>Caramel Pecan</li>
-            </ul>
-            <ul>
-                <li class="list-header">Gifts</li>
-            </ul>
+    <div id="product-details-main">
+        <div class="product-image">
+            <img src="./assets/blackberry-roll.jpg">
         </div>
-        <div id="myProductlist">
-            <div class="display">
-                <img src="./assets/menupage-cinnamon.jpg">
+        <div id= "product-details">
+            <div class="item-details">
+                <h2>Blackberry Roll</h2>
+                <h3>This is a delicious roll that will melt once you eat it.</h3>
+                <ul>
+                    <li>0% trans fat</li>
+                    <li>made fresh daily</li>
+                </ul>
+                <p>$2.00</p>
             </div>
-            <div class="items-list">
-                <div class="item original-cinnamon">
-                    <a href="product_detail.html"><img src="./assets/menu-cinnamon-item.JPG" class="menu-item-selling"></a>
-                    <a href="product_detail.html"><p>Original</p></a>
-                    <p>$2.00</p>
-                    <a href="product_detail.html"><button type="button" class="button">Shop Now</button></a>
+            <div class ="glaze-options">
+                <form>
+                    <input type="checkbox" name="flavor1" value="None">None
+                    <input type="checkbox" name="flavor2" value="Sugar Milk">Sugar Milk
+                    <input type="checkbox" name="flavor3" value="Vanilla Milk">Vanilla Milk
+                    <input type="checkbox" name="flavor4" value="Double Chocolate">Double Chocolate
+                </form>
+            </div>
+            <div id="shopping-details">
+                <div class ="quantity">
+                    <select id="quantityList">
+                        <option value="1">1</option>
+                        <option value="3">3</option>
+                        <option value="6">6</option>
+                        <option value="12">12</option>
+                    </select>
                 </div>
-                <div class="item blackberry-cinnamon">
-                    <img src="./assets/menu-cinnamon-item.JPG" class="menu-item-selling">
-                    <p>BlackBerry</p>
-                    <p>$2.00</p>
-                    <button type="button" class="button">Shop Now</button>
-                </div>
-                 <div class="item pumpkin-spice-cinnamon">
-                    <img src="./assets/menu-cinnamon-item.JPG" class="menu-item-selling">
-                    <p>Pumpkin Spice</p>
-                    <p>$2.00</p>
-                    <button type="button" class="button">Shop Now</button>
+                <div class ="add-to-cart">
+                    <button type="button" class="button">Add to Cart</button>
                 </div>
             </div>
         </div>
@@ -101,6 +95,6 @@
             </ul>
         </div>
     </div>
-
 </body>
 </html>
+    
