@@ -4,30 +4,32 @@
     <title>Bum Bum Bake Shop</title>
     <meta charset="UTF-8">
     <!--style-->
-    <link  rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"> 
+    <link  rel="stylesheet" type="text/css" href="../style.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <script src="../main.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
 </head>
 <body>
     <div class="top-bar"></div>
     <header>
-        <img src ="./assets/header-logo.png">
+        <img src ="../assets/header-logo.png">
         <nav>    
             <div class="nav-links">
                 <a href="index.html">Home</a>
                 <a href="menu.html">Items</a>
                 <a>About</a>
                 <a>&#128269;</a>
-                <a href="shopping_cart.html">&#x1F6D2;</a>
+                <a href="../assignment-6/shopping_cart.html">&#x1F6D2;</a>
             </div>
         </nav>
     </header>
     <div id="product-details-main">
         <div class="product-image">
-            <img src="./assets/blackberry-roll.jpg">
+            <img src="../assets/flavors/original.JPG" id="picture">
         </div>
         <div id= "product-details">
             <div class="item-details">
-                <h2>Blackberry Roll</h2>
+                <h2>Original Roll</h2>
                 <h3>This is a delicious roll that will melt once you eat it.</h3>
                 <ul>
                     <li>0% trans fat</li>
@@ -37,10 +39,10 @@
             </div>
             <div class ="glaze-options">
                 <form>
-                    <input type="checkbox" name="flavor1" value="None">None
-                    <input type="checkbox" name="flavor2" value="Sugar Milk">Sugar Milk
-                    <input type="checkbox" name="flavor3" value="Vanilla Milk">Vanilla Milk
-                    <input type="checkbox" name="flavor4" value="Double Chocolate">Double Chocolate
+                    <input type="radio" id="none" name="flavor" value="none" onClick="changeSrc()"> None
+                    <input type="radio" id="sugar" name="flavor" value="sugar" onClick="changeSrc()">Sugar Milk
+                    <input type="radio" id="vanilla" name="flavor" value="vanilla" onClick="changeSrc()">Vanilla Milk
+                    <input type="radio" id="sugar"name="flavor" value="double-chocolate" onClick="changeSrc()">Double Chocolate
                 </form>
             </div>
             <div id="shopping-details">
