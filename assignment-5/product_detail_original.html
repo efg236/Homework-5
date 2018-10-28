@@ -7,7 +7,6 @@
     <link  rel="stylesheet" type="text/css" href="../style.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     <script src="../main.js" type="text/javascript"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
 </head>
 <body>
     <div class="top-bar"></div>
@@ -38,14 +37,16 @@
                 <p>$2.00</p>
             </div>
             <div class ="glaze-options">
+                <p class="form-title">Glaze</p>
                 <form>
                     <input type="radio" id="none" name="flavor" value="none" onClick="changeSrc()"> None
                     <input type="radio" id="sugar" name="flavor" value="sugar" onClick="changeSrc()">Sugar Milk
                     <input type="radio" id="vanilla" name="flavor" value="vanilla" onClick="changeSrc()">Vanilla Milk
-                    <input type="radio" id="sugar"name="flavor" value="double-chocolate" onClick="changeSrc()">Double Chocolate
+                    <input type="radio" id="double-chocolate"name="flavor" value="double-chocolate" onClick="changeSrc()">Double Chocolate
                 </form>
             </div>
             <div id="shopping-details">
+                <p class="form-title">Quantity</p>
                 <div class ="quantity">
                     <select id="quantityList">
                         <option value="1">1</option>

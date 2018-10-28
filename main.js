@@ -2,20 +2,17 @@
 //PRODUCT DETAIL PAGE
 //change photos on product detail page based on glaze option
 function changeSrc() {
-    if (document.getElementsByClassName("sugar").checked) {
-        document.getElementsById("picture").src = "./assets/glaze-options/cinnamonroll-sugar.jpg";
-    } else if (document.getElementsByClassName("vanilla").checked) {
-        document.getElementsById("picture").src = ".assets/glaze-options/cinnamonroll-vanilla.jpg"; 
-    } else if (document.getElementsByClassName("double-chocolate").checked) {
-        document.getElementsbyId("picture").src = ".assets/glaze-options/cinnamonroll-chocolate.jpg";
-    }
+    if (document.getElementById("sugar").checked) {
+        document.getElementById("picture").src = "../assets/glaze-options/cinnamonroll-sugar.jpg";
+    } else if (document.getElementById("vanilla").checked) {
+        document.getElementById("picture").src = "../assets/glaze-options/cinnamonroll-vanilla.jpg"; 
+    } else if (document.getElementById("double-chocolate").checked) {
+        document.getElementById("picture").src = "../assets/glaze-options/cinnamonroll-chocolate.jpg";
+    } else if (document.getElementById("none").checked) {
+        document.getElementById("picture").src = "../assets/glaze-options/cinnamonroll-none.jpg";
+        }
 }
 
-    
-//    var value = img.options[glaze-options.selectedIndex].value;
-//    alert(selectedValue);
-    console.log(img);
-}
 
 
 //IN BETWEEN
@@ -35,7 +32,3 @@ function changeQuantity() {
 }
 
 //remove selected items on page 
-
-document.addEventListener("DOMContentLoaded", function(event) {
-    setPicture();
-});
