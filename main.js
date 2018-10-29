@@ -17,7 +17,9 @@ function changeSrc() {
 (function saveForm() {
     function toJSONString(form) {
         var obj = {};
-        var elements = form.querySelectorAll("h2,input,select");
+        var cinnamonRollType = document.querySelector("#product-details").dataset.cinnamonRoll;
+        var elements = form.querySelectorAll("input,select");
+        obj["cinnamonRollType"]= cinnamonRollType;
         for( var i = 0; i < elements.length; ++i) {
             var element = elements[i];
             var name = element.name;
@@ -89,6 +91,7 @@ function addItemtoCart(name, price, count){
     }
     var item = new Item(name, price, count);
     cart.push(item);
+    saveCart();
 }
 
 //remove items from cart / remove one item
@@ -101,6 +104,7 @@ function removeItemFromCart (name) {
             }
         }
     }
+    saveCart();
 }
 
 //remove items from cart / remove all items
@@ -112,11 +116,13 @@ function removeItemFromCartAll (name) {
             break;
         }
     }
+    saveCart();
 }
 
 // clear cart
 function clearCart() {
     cart = [];
+    saveCart();
 }
 
 // count cart
@@ -138,4 +144,31 @@ function totalCart() {
      totalCost += cart[i].price;   
     }
     return totalCost;
+}
+
+//list cart
+function listCart() {
+    var cartCopy = [];
+    for (var i in cart) {
+        var item = cart[i];
+        var itemCopy = {};
+        for(var p in item) {
+            itemCopy[p] = item[p];
+        }
+        cartCopy.push(itemCopy);
+    }
+    return cartCopy;
+}
+
+
+// save cart
+function saveCart () {
+    localStorage.setItem("shoppingCart",JSON.stringify(cart));
+    
+}
+
+
+//load cart
+function loadCart() {
+    cart = JSON.parse(localStorage.getItem("shoppingCart"));
 }

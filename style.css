@@ -304,7 +304,7 @@ h3 {
 
 .shopping-cart {
     width:750px;
-    height:600px;
+    height:100%;
     margin:30px auto;
     display:flex;
     flex-direction:column;
@@ -337,6 +337,7 @@ h3 {
     margin-left:auto;
     margin-right:auto;
     margin-top:20px;
+    margin-bottom: 20px;
     display:flex;
 }
 
@@ -348,7 +349,7 @@ h3 {
 
 .shoppingcart-image img{
     width:100%;
-    height:auto;
+    height:100%;
 }
 
 .shoppingcart-text {

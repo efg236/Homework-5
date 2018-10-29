@@ -6,7 +6,9 @@
     <!--style-->
     <link  rel="stylesheet" type="text/css" href="../style.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-    <script="main.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <script src="../main.js" type="text/javascript"></script>
+    <script src="../shopping-cart.js" type="text/javascript"></script>
 </head>
 <body>
     <div class="top-bar"></div>
@@ -28,60 +30,10 @@
             Cart
         </div>
         <div id="item-count">
-        <span>&#x1F6D2; 3 items in Your Cart</span>
+        &#x1F6D2; <span>3 items in Your Cart</span>
         <hr>
         </div>
-        <div class="shoppingcart-item">
-            <!---Product#1-->
-            <div class="shoppingcart-image">
-                <img src="../assets/flavors/original.JPG" alt="" / class="thumbnail">
-            </div>
-            <div class="shoppingcart-text">
-                <div class="shopping-cart-options">
-                    <div class="shoppingcart-description">
-                        <span class="product-title">Original Roll</span>
-                    </div>
-                    <div class="shoppingcart-quantity">
-                        <input type="text" value="1"/>
-                    </div>
-                    <div class="shoppingcart-total-price">
-                        $2.00
-                    </div>
-            </div>
-            <hr>
-                <div class="shopping-cart-options">
-                    <div class="glaze">Glaze: None</div>
-                    <div class="update">Update</div>
-                    <div class="remove">Remove Item</div>
-                </div>
-            </div>
-        </div>
-        <div class="shoppingcart-item">
-            <!---Product#2-->
-            <div class="shoppingcart-image">
-                <img src="../assets/flavors/blackberry-roll.jpg" alt="" / class="thumbnail">
-            </div>
-            <div class="shoppingcart-text">
-                <div class="shopping-cart-options">
-                    <div class="shoppingcart-description">
-                        <span class="product-title">Blackberry Roll</span>
-                    </div>
-                    <div class="shoppingcart-quantity">
-                        <input type="text" value="1"/>
-                    </div>
-                    <div class="shoppingcart-total-price">
-                        $2.00
-                    </div>
-                </div>
-       
-            <hr>
-                <div class="shopping-cart-options">
-                    <div class="glaze">Glaze: Vanilla Milk</div>
-                    <div class="update">Update</div>
-                    <div class="remove">Remove Item</div>
-                </div>
-            </div>
-        </div>
+        <div id="cart-items-container"></div>
         <div class="totals">
             <div class="totals-item">
                 <label>Subtotal</label>
