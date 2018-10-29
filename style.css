@@ -354,13 +354,11 @@ h3 {
 .shoppingcart-text {
     position:relative;
     width:100%;
-    padding:0 30px;
+    padding:27px 30px 0 30px;
     display:inline-block;
 }
 
 .shoppingcart-text .shoppingcart-description {
-    padding-top:10px;
-    margin-right:60px;
     width:33.33%;
     display:inline-block;
 }
@@ -373,8 +371,7 @@ h3 {
 }
 
 .shoppingcart-text .shoppingcart-quantity {
-    padding-top:20px;
-    margin-right:60px;
+    text-align: center;
     width:33.33%;
     display:inline-block;
 }
@@ -388,7 +385,6 @@ h3 {
 }
 
 .shoppingcart-text .shoppingcart-total-price {
-    padding-top:27px;
     text-align:center;
     font-size:16px;
     color:#43484D;
@@ -406,11 +402,18 @@ span {
     font-weight:bold;
 }
 
-#options {
+.shopping-cart-options {
     display:flex;
-    justify-content: space-between;
     font-size: 14px;
     color:#43484D;
+}
+
+.shopping-cart-options > div {
+    width: 33.33%;
+}
+
+.shopping-cart-options > div:last-child {
+    text-align: right;
 }
 
 .update {
@@ -529,4 +532,17 @@ label {
     border-top: 0.2em solid #667080;
     border-right: 0.2em solid #667080;
     transform: rotate(-135deg);
+}
+
+.badge {
+  padding-left: 9px;
+  padding-right: 9px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+}
+
+.label-warning[href],
+.badge-warning[href] {
+  background-color: #c67605;
 }

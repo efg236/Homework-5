@@ -14,21 +14,84 @@ function changeSrc() {
 }
 
 
+(function saveForm() {
+    function toJSONString(form) {
+        var obj = {};
+        var elements = form.querySelectorAll("h2,input,select");
+        for( var i = 0; i < elements.length; ++i) {
+            var element = elements[i];
+            var name = element.name;
+            var value = element.value;
+            if(element.checked) {
+                var imagePath = element.dataset.imagePath;
+                obj[name] = value;
+                obj["imagePath"] = imagePath;
+                
+            }
+            else if(name === "quantity") {
+                obj[name] = value;
+            }
+            
+        }
+    
+    return JSON.stringify(obj);
+    }
 
-//IN BETWEEN
-// pull local storage data from product detail page to shopping cart page
-// show indication of items near shopping cart item
+     document.addEventListener("DOMContentLoaded",function() {
+        var form = document.getElementById("options-form");
+        form.addEventListener("submit",function(event) {
+            event.preventDefault();
+            var formData = toJSONString(this);
+            var storedData = JSON.parse(localStorage.getItem("cart_array"));
+            if(storedData) { 
+                storedData.push(formData);
+                localStorage.setItem("cart_array", JSON.stringify(storedData));
+            } else {
+                localStorage.setItem("cart_array", JSON.stringify([formData]));
+            }
+            
+            storedDataLength = JSON.parse(localStorage.getItem("cart_array")).length;
+            document.querySelector("#shopping-cart-quantity-indicator").innerHTML = `(${storedDataLength})`;
+//            localStorage.setItem("json",json);
+//            
+//            json_deserialized =JSON.parse(localStorage.getItem("json"));
+            
+//            console.log(json_deserialized);
+             console.log(JSON.parse(localStorage.getItem("cart_array")))
+        }, false);
+    });
 
+})();
+
+//REFACTOR USED TWICE LINE 40
+document.addEventListener("DOMContentLoaded",function() {
+   storedDataLength = JSON.parse(localStorage.getItem("cart_array")).length;
+   document.querySelector("#shopping-cart-quantity-indicator").innerHTML = `(${storedDataLength})`;
+});
 
 
 //SHOPPING CART
-// change image on shopping cart page
+var shoppingCart = [];
 
-// change quantity on shopping cart page 
-function changeQuantity() {
-    var shoppingQuantity = document.getElementsByClassName("shoppingcart-quantity");
-    var detailQuantity = document.getElementsbyId("quantityList");
-    quantity.push(detailQuantity);
+var Item = function(name, price, count) {
+    this.name = name
+    this.price = price
+    this.count = count 
+};
+
+//add items to cart
+function addItemtoCart(name, price, count){
+    for (var i in cart) {
+        if (cart[i].name === name) {
+            cart[i].count += count;
+            return;
+        }
+    }
+    var item = new Item(name, price, count);
+    cart.push(item);
 }
 
-//remove selected items on page 
+//remove items from cart / remove one item
+function removeItemFromCart (name) {
+    
+}

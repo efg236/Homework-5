@@ -18,7 +18,7 @@
                 <a href="menu.html">Items</a>
                 <a>About</a>
                 <a>&#128269;</a>
-                <a href="../assignment-6/shopping_cart.html">&#x1F6D2;</a>
+                <a href="../assignment-6/shopping_cart.html">&#x1F6D2;<span id="shopping-cart-quantity-indicator">(0)</span></a>
             </div>
         </nav>
     </header>
@@ -36,29 +36,32 @@
                 </ul>
                 <p>$2.00</p>
             </div>
-            <div class ="glaze-options">
+            <div>
                 <p class="form-title">Glaze</p>
-                <form>
-                    <input type="radio" id="none" name="flavor" value="none" onClick="changeSrc()"> None
-                    <input type="radio" id="sugar" name="flavor" value="sugar" onClick="changeSrc()">Sugar Milk
-                    <input type="radio" id="vanilla" name="flavor" value="vanilla" onClick="changeSrc()">Vanilla Milk
-                    <input type="radio" id="double-chocolate"name="flavor" value="double-chocolate" onClick="changeSrc()">Double Chocolate
+                <form id="options-form">
+                    <div class="form-radio-btns">
+                        <input type="radio" id="none" name="flavor" value="none" data-image-path="../assets/glaze-options/cinnamonroll-none.jpg" onClick="changeSrc()"> None
+                        <input type="radio" id="sugar" name="flavor" value="sugar" data-image-path="../assets/glaze-options/cinnamonroll-sugar.jpg" onClick="changeSrc()">Sugar Milk
+                        <input type="radio" id="vanilla" name="flavor" value="vanilla" data-image-path="../assets/glaze-options/cinnamonroll-vanilla.jpg" onClick="changeSrc()">Vanilla Milk
+                        <input type="radio" id="double-chocolate"name="flavor" value="double-chocolate" data-image-path="../assets/glaze-options/cinnamonroll-chocolate.jpg" onClick="changeSrc()">Double Chocolate
+                    </div>
+                    <div id="shopping-details">
+                        <p class="form-title">Quantity</p>
+                        <div class ="quantity">
+                            <select name="quantity" id="quantityList">
+                                <option  value="1">1</option>
+                                <option  value="3">3</option>
+                                <option   value="6">6</option>
+                                <option  value="12">12</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class ="add-to-cart">
+                        <button type="submit" class="button">Add to Cart</button>
+                    </div>
                 </form>
             </div>
-            <div id="shopping-details">
-                <p class="form-title">Quantity</p>
-                <div class ="quantity">
-                    <select id="quantityList">
-                        <option value="1">1</option>
-                        <option value="3">3</option>
-                        <option value="6">6</option>
-                        <option value="12">12</option>
-                    </select>
-                </div>
-                <div class ="add-to-cart">
-                    <button type="button" class="button">Add to Cart</button>
-                </div>
-            </div>
+
         </div>
     </div>
     <div class="footer-bar"></div>
