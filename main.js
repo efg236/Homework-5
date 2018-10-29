@@ -114,3 +114,28 @@ function removeItemFromCartAll (name) {
     }
 }
 
+// clear cart
+function clearCart() {
+    cart = [];
+}
+
+// count cart
+
+function countCart() {
+    var totalCount = 0;
+    for (var i in cart) {
+        totalCount += cart[i].count;
+        
+    }
+    return totalCount;
+}
+
+//total cart cost
+
+function totalCart() {
+    var totalCost = 0;
+    for (var i in cart) {
+     totalCost += cart[i].price;   
+    }
+    return totalCost;
+}
