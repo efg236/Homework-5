@@ -10,8 +10,17 @@
   top:50%;
   left:50%;
   transform: translate(-50%,-50%);
-  justify-content: space-between;
   width: 80%;
+  margin-top:90px;
+}
+
+.game-buttons-container {
+  align-items: center;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: 50px auto;
 }
 
 nav {
@@ -56,5 +65,20 @@ div .item-img {
 }
 
 #game-save {
-  display:flex;
+  padding:20px;
+  max-width:50%;
+  max-height:50%;
 }
+
+
+.button {
+  background-color:#4CAF50;
+  border:none;
+  color:white;
+  padding:20px;
+  text-align:center;
+  text-decoration:none;
+  margin:4px 2px;
+}
+
+.button1 {border-radius:50%}
