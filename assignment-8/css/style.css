@@ -1,7 +1,10 @@
 @import url("hover.css");
-
+@import url("card.css");
 /*styling containers*/
 
+body {
+  background-color:blue;
+}
 
 .container {
   height: 100%;
@@ -53,63 +56,6 @@ p {
   width:25%;
   height:25%;
 }
-
-/*styling cards*/
-
-.game-card{
-  align-items:center;
-  width:250px;
-  height:280px;
-  background: #ffffff;
-  position:relative;
-}
-
-.game-card .card {
-  border: none;
-  cursor: pointer;
-  position:relative;
-  width:100%;
-  height:100%;
-  transform-style: preserve-3d;
-  transition: transform 1s ease;
-}
-
-.game-card .card.flipped {
-  transform: rotateY(180deg);
-}
-
-/*.game-card-content {
-  align-items: center;
-  margin:75px 0;
-}
-*/
-
-/*styling card flip when clicked*/
-
-.game-card .card .card__face {
-  border-radius: 25px;
-  position:absolute;
-  width:100%;
-  height:100%;
-  backface-visibility: hidden;
-  color:#fff;
-  cursor:pointer;
-  padding: 20px;
-}
-
-.game-card .card .card__face img {
-  width: 100%;
-}
-
-.game-card .card .front{
-  background:#58597E;
-}
-
-.game-card .card .back {
-  background:green;
-  transform:rotateY(180deg);
-}
-
 
 div .item-name {
   width:100%;
