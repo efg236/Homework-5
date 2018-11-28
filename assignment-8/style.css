@@ -41,6 +41,12 @@ nav #card-counter {
   top: 50%;
   transform: translateY(-50%);
 }
+p {
+  text-align: center;
+  color:white;
+  font-size:18px;
+  font-family:inherit;
+}
 
 #game-logo{
   padding:10px;
@@ -57,20 +63,27 @@ nav #card-counter {
   width:250px;
   height:280px;
   background: #58597E;
+  position:relative;
 }
 
-p {
-  text-align: center;
-  color:white;
-  font-size:18px;
-  font-family:inherit;
+#game-card .card {
+  position:relative;
+  width:100%;
+  height:100%;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
 }
 
-#game-card-content {
+#game-card .card .flipped {
+  transform: rotateY(180deg);
+}
+
+/*#game-card-content {
   align-items: center;
   margin:75px 0;
-
 }
+*/
+
 div .item-name {
   width:100%;
 
@@ -85,28 +98,25 @@ div .item-img {
 }
 
 /*styling card flip when clicked*/
-
-.flip-card:clicked .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
+#game-card .card .front{
+  position:absolute;
+  width:100%;
+  height:100%;
   backface-visibility: hidden;
-}
-.flip-card-front {
-  background-color: #bbb;
-  color: black;
-  z-index: 2;
+  background:#58597E;
+  color:#fff;
+  cursor:pointer;
 }
 
-.flip-card-back {
-  background-color: #2980b9;
-  color: white;
-  transform: rotateY(180deg);
-  z-index: 1;
+#game-card .card .back {
+  position: absolute;
+  width:100%;
+  height:100%;
+  backface-visibility: hidden;
+  background:green;
+  color:#fff;
+  transform:rotateY(180deg);
+  cursor:pointer;
 }
 
 /*styling panda save button*/
