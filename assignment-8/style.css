@@ -56,33 +56,60 @@ p {
 
 /*styling cards*/
 
-#game-card{
+.game-card{
   align-items:center;
-  border-radius: 25px;
-  padding:20px;
   width:250px;
   height:280px;
-  background: #58597E;
+  background: #ffffff;
   position:relative;
 }
 
-#game-card .card {
+.game-card .card {
+  border: none;
+  cursor: pointer;
   position:relative;
   width:100%;
   height:100%;
   transform-style: preserve-3d;
-  transition: all 0.5s ease;
+  transition: transform 1s ease;
 }
 
-#game-card .card .flipped {
+.game-card .card.flipped {
   transform: rotateY(180deg);
 }
 
-/*#game-card-content {
+/*.game-card-content {
   align-items: center;
   margin:75px 0;
 }
 */
+
+/*styling card flip when clicked*/
+
+.game-card .card .card__face {
+  border-radius: 25px;
+  position:absolute;
+  width:100%;
+  height:100%;
+  backface-visibility: hidden;
+  color:#fff;
+  cursor:pointer;
+  padding: 20px;
+}
+
+.game-card .card .card__face img {
+  width: 100%;
+}
+
+.game-card .card .front{
+  background:#58597E;
+}
+
+.game-card .card .back {
+  background:green;
+  transform:rotateY(180deg);
+}
+
 
 div .item-name {
   width:100%;
@@ -95,28 +122,6 @@ div .item-img {
   margin-right:auto;
   max-width:50%;
   max-height:50%;
-}
-
-/*styling card flip when clicked*/
-#game-card .card .front{
-  position:absolute;
-  width:100%;
-  height:100%;
-  backface-visibility: hidden;
-  background:#58597E;
-  color:#fff;
-  cursor:pointer;
-}
-
-#game-card .card .back {
-  position: absolute;
-  width:100%;
-  height:100%;
-  backface-visibility: hidden;
-  background:green;
-  color:#fff;
-  transform:rotateY(180deg);
-  cursor:pointer;
 }
 
 /*styling panda save button*/

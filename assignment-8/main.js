@@ -1,5 +1,11 @@
-var card = document.querySelector('.card');
+$( document ).ready(function() {
+    const body = $("body");
+    const cards = body.find(".card");
 
-card.addEventListener('click', function() {
-  card.classList.toggle('flipped');
+    cards.on("click", onCardClick)
+
+    function onCardClick(event) {
+      const target = $(event.currentTarget);
+      target.toggleClass("flipped")
+    }
 });
