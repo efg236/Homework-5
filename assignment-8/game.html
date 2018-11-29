@@ -11,6 +11,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Patrick+Hand" rel="stylesheet">
   <script type="text/javascript" src="./js/main.js"></script>
+  <script type="text/javascript" src="./js/content.js"></script>
 </head>
 <body>
   <div class="container">
@@ -66,7 +67,7 @@
               <div class="card__face front">
                 <div><p class="item-name">Eggplant</p>
                 </div>
-                <div><img class="item-img hvr-grow-rotate" src="./assets/bad-food/eggplant.png">
+                <div><img class="item-img hvr-grow-rotate bad-food" src="./assets/bad-food/eggplant.png">
                 </div>
               </div>
               <div class="card__face back">
@@ -84,17 +85,16 @@
           <div class="game-buttons-container">
             <!--panda animation at the bottom that saves good cards-->
             <div id="game-save">
-              <a class="hvr-grow"><img class="img-fluid" src="./assets/panda-good.png"></a>
-            </div>
-            <!--call-to-action button-->
-            <div id="game-next">
-              <button class="button button1">Next</button>
+              <div id="panda-drop-target"></div>
             </div>
           </div>
         </div>
       </div>
 
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenLite.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/utils/Draggable.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/plugins/CSSPlugin.min.js"></script>
   <!--JQuery--Popper.js--Bootstrap.js-->
   <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

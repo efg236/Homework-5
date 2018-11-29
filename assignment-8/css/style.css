@@ -20,13 +20,16 @@ body {
   margin-top:90px;
 }
 
+.hidden {
+  visibility: hidden;
+}
+
 .game-buttons-container {
-  align-items: center;
   padding: 15px;
-  display: flex;
-  justify-content: space-between;
-  width: 50%;
+  width: 100%;
   margin: 50px auto;
+  position: relative;
+  z-index: -1;
 }
 
 /*styling navigation bar*/
@@ -53,8 +56,8 @@ p {
 
 #game-logo{
   padding:10px;
-  width:25%;
-  height:25%;
+  width:40%;
+  height:40%;
 }
 
 div .item-name {
@@ -74,8 +77,34 @@ div .item-img {
 
 #game-save {
   padding:20px;
-  max-width:50%;
-  max-height:50%;
+  max-width:35%;
+  margin: 0 auto;
+  background: url("../assets/panda-good.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 208px;
+  -webkit-transition: background .1s ease-in-out;
+  -moz-transition: background .1s ease-in-out;
+  -o-transition: background .1s ease-in-out;
+  transition: background .1s ease-in-out;
+  position: relative;
+}
+
+#game-save.panda-mouth-open {
+  background: url("../assets/panda-mouthopen.png");
+}
+
+#game-save.panda-bad {
+  background: url("../assets/panda-bad.png");
+}
+
+#game-save #panda-drop-target {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /*styling next button*/
@@ -84,7 +113,7 @@ div .item-img {
   background-color:#4CAF50;
   border:none;
   color:white;
-  padding:20px;
+  padding:30px;
   text-align:center;
   text-decoration:none;
   margin:4px 2px;
