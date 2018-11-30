@@ -117,9 +117,9 @@
 }
 
 .game-card .card .back.good{
-  background:green;
+  background:#119966;
 }
 
 .game-card .card .back.bad{
-  background:red;
+  background:#931221;
 }
