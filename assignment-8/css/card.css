@@ -17,6 +17,15 @@
   transition: transform 1s ease;
 }
 
+@media (max-width:767.98px) {
+  .game-card .card {
+    width:50%;
+    height:75%;
+    transform-style:preserve-3d;
+    transition:transform 1s ease;
+  }
+}
+
 .game-card .card.flipped {
   transform: rotateY(180deg);
 }
@@ -27,7 +36,16 @@
 
 .game-card .card .back-content{
   text-align: center;
+  font-size:12px;
   margin-top:20px;
+}
+
+@media (max-width:767.98px) {
+  .game-card .card .back-content{
+    text-align:center;
+    font-size:8px;
+    margin:-top:20px;
+  }
 }
 
 /*styling card flip when clicked*/
@@ -43,9 +61,16 @@
   padding: 20px;
 }
 
-.game-card .card .card__face img {
-  width: 50%;
+@media (max-width:767.98px) {
+  .game-card .card .card__face {
+    padding:10px;
+  }
 }
+
+.game-card .card .card__face img {
+  width: 70%;
+}
+
 
 .game-card .card .front{
   background:#58597E;
