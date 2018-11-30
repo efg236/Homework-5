@@ -16,8 +16,9 @@ body {
   top:50%;
   left:50%;
   transform: translate(-50%,-50%);
-  width: 80%;
+  width: 85%;
   margin-top:90px;
+  animation: moveSlideshow 12s linear infinite;
 }
 
 .game-buttons-container {
@@ -27,6 +28,49 @@ body {
   position: relative;
   z-index: -1;
 }
+
+.overflow-visible {
+  overflow: visible!important;
+}
+
+/*styling carousel */
+
+#card-carousel {
+
+}
+
+.carousel-inner {
+  height: 320px;
+}
+
+.carousel-inner .row {
+  max-width: 806px;
+  padding: 10px;
+  margin: 0;
+}
+
+.carousel-inner .carousel-items-container{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-control-prev {
+  margin-left: -90px;
+}
+
+.carousel-control-next {
+  margin-right: -90px;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23B8B8B8' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E")!important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23B8B8B8' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E")!important;
+}
+
 
 /*styling navigation bar*/
 

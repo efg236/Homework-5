@@ -2,8 +2,8 @@
 
 .game-card{
   align-items:center;
-  width:250px;
-  height:280px;
+  width:240px;
+  height:270px;
   position:relative;
 }
 
@@ -57,10 +57,10 @@
   justify-content: center;
 }
 
-.game-card .card .back .good{
+.game-card .card .back.good{
   background:green;
 }
 
-.game-card .card .back .bad{
+.game-card .card .back.bad{
   background:red;
 }

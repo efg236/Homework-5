@@ -1,6 +1,10 @@
 $( document ).ready(function() {
-    const body = $("body");
-    const cards = body.find(".card");
+    const body = $("body"),
+          cards = body.find(".card"),
+          carousel = body.find("#card-carousel"),
+          carouselInner = body.find(".carousel-inner"),
+          carouselNext = body.find(".carousel-control-next"),
+          carouselPrev = body.find(".carousel-control-prev");
 
     function onCardClick(event) {
       const target = $(event.currentTarget);
@@ -52,9 +56,27 @@ $( document ).ready(function() {
       });
     }
 
+    function onSliding() {
+      // during carousel sliding event remove overflow-visible class, remove flipped class on cards
+      if (carouselInner.hasClass("overflow-visible")) {
+        carouselInner.removeClass("overflow-visible");
+      }
+      if (cards.hasClass("flipped")) {
+        cards.removeClass("flipped");
+      }
+    }
+
+    function onSlid() {
+      // after carousel sliding event concludes, add class overflow-visible
+      if (!carouselInner.hasClass("overflow-visible")) {
+        carouselInner.addClass("overflow-visible");
+      }
+    }
 
     // events
     cards.on("click", onCardClick);
+    carousel.on('slide.bs.carousel', onSliding);
+    carousel.on('slid.bs.carousel', onSlid);
 
     // inits
     initDraggable();
