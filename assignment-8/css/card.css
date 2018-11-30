@@ -52,7 +52,15 @@
 }
 
 .game-card .card .back {
-  background:green;
+  background:black;
   transform:rotateY(180deg);
   justify-content: center;
+}
+
+.game-card .card .back .good{
+  background:green;
+}
+
+.game-card .card .back .bad{
+  background:red;
 }

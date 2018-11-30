@@ -73,7 +73,7 @@ div .item-img {
 
 #game-save {
   padding:20px;
-  max-width:35%;
+  max-width:258px;
   margin: 0 auto;
   background: url("../assets/panda-good.png");
   background-size: cover;
@@ -88,10 +88,14 @@ div .item-img {
 
 #game-save.panda-mouth-open {
   background: url("../assets/panda-mouthopen.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #game-save.panda-bad {
   background: url("../assets/panda-bad.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #game-save #panda-drop-target {
@@ -102,17 +106,3 @@ div .item-img {
   left: 50%;
   transform: translateX(-50%);
 }
-
-/*styling next button*/
-
-.button {
-  background-color:#4CAF50;
-  border:none;
-  color:white;
-  padding:30px;
-  text-align:center;
-  text-decoration:none;
-  margin:4px 2px;
-}
-
-.button1 {border-radius:50%}
