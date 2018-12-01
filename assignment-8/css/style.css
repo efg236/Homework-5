@@ -29,6 +29,8 @@ body {
   z-index: -1;
 }
 
+/*responsive for panda animation*/
+
 @media (max-width:1000px) {
   .game-buttons-container {
     display: none;
@@ -114,8 +116,16 @@ nav {
   width: 80%;
   margin: auto;
   position: relative;
+  max-width: 776px;
 }
 
+#game-info .modal-body h4 {
+  text-align: center;
+}
+
+#game-info .modal-body p {
+  color:black;
+}
 
 p {
   text-align: center;
@@ -130,6 +140,7 @@ p {
   height:40%;
 }
 
+/*responsive for logo*/
 @media (max-width:480px) {
   #game-logo{
     width:100%;
@@ -147,7 +158,7 @@ p {
 div .item-name {
   width:100%;
 }
-
+/*responsive for front flashcard text*/
 @media(max-width:1000px) {
   .item-name{
     font-size:15px;
@@ -206,17 +217,31 @@ div .item-img {
   transform: translateX(-50%);
 }
 
+/*"feed me" underneath the panda animation*/
 #panda-feed-me {
   text-align: center;
   width:100%;
 }
 
+/*modal button*/
 .btn.btn-primary {
-  position:relative;
-  left: -180px;
-  top: 20px;
+  position: absolute;
+  left: 0;
+  top: 150px;
   background-color:white;
   border-color:grey;
   color:grey;
   border-radius:45%;
+}
+
+/*responsive for front flashcard text*/
+
+@media(max-width:1000px) {
+  .btn.btn-primary {
+    top: 275px;
+    background-color:white;
+    border-color:grey;
+    color:grey;
+    border-radius:45%;
+  }
 }

@@ -1,4 +1,4 @@
-/*styling cards*/
+/*styling flashcards*/
 
 .game-card{
   align-items:center;
@@ -101,25 +101,29 @@
   }
 }
 
+/*default purple color of the front flashcard*/
 .game-card .card .card__face img {
   width: 70%;
 }
 
-
+/*default purple color of the front flashcard*/
 .game-card .card .front{
   background:#58597E;
 }
 
+/*back side of flashcard properties*/
 .game-card .card .back {
   background:black;
   transform:rotateY(180deg);
   justify-content: center;
 }
 
+/*makes the "good food" flashcard green*/
 .game-card .card .back.good{
   background:#119966;
 }
 
+/*makes the "good food" flashcard red*/
 .game-card .card .back.bad{
   background:#931221;
 }
