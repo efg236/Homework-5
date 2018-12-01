@@ -210,3 +210,13 @@ div .item-img {
   text-align: center;
   width:100%;
 }
+
+.btn.btn-primary {
+  position:relative;
+  left: -180px;
+  top: 20px;
+  background-color:white;
+  border-color:grey;
+  color:grey;
+  border-radius:45%;
+}
